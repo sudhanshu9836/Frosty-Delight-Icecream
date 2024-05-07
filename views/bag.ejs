@@ -1,0 +1,39 @@
+<%- include('header')%>
+<div class="bag">
+    <div class="left">
+        <h1>Bag</h1>
+        <div class="orders-list">
+            <div class="order">
+                <h3><%=orders[0].name%></h3>
+                <div class="order-inner">
+                    <img src="<%=orders[0].photo%>" id="order-image">
+                    <form action=""><i class="fa-solid fa-trash"></i></form>
+                </div>
+            </div>
+        </div>
+        <div class="contact-button">
+            <button class="bt1">Place Order</button>
+        </div>
+    </div>
+    <div class="right">
+        <div class="contact-info">
+            <div class="c">
+                <label for="name">Name :</label>
+                <input type="text" placeholder="Enter your name .." id="name" required>
+            </div>
+            <div class="c">
+                <label for="email">Email :</label>
+                <input type="email" placeholder="Enter your email .." id="email" required>
+            </div>
+            <div class="c">
+                <label for="contact-no">Phone no :</label>
+                <input type="number" placeholder="Enter your phone number .." required>
+            </div>
+            <div class="c">
+                <label for="contact-address">Address :</label>
+                <textarea placeholder="Enter your address .." id="contact-address" required></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('footer')%>

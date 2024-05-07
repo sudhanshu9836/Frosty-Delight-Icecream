@@ -39,6 +39,10 @@ a{
     width: 400px;
     border-radius: 30px;
 }
+#contact-photo{
+    height: 600px;
+    width: 400px;
+}
 
 /* Button Styles */
 
@@ -369,4 +373,84 @@ footer{
 }
 .f3 a{
     color: white;
+}
+
+/* Contact page */
+
+.contact-page{
+    margin: 120px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
+.contact-info{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 50px;
+}
+.c{
+    display: flex;
+    flex-direction: column;
+}
+.c input{
+    height: 50px;
+    width: 600px;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 12px;
+    font-weight: 300;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#contact-address{
+    height: 100px;
+    width: 600px;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 12px;
+    font-weight: 300;
+    padding: 10px;
+    resize: none;
+}
+
+.contact-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Order Styling */
+
+.bag{
+    margin: 120px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
+.order{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    border: 2px solid lightgray;
+    /* margin-left: 30px; */
+    margin: 30px;
+    border-radius: 10px;
+}
+.order-inner{
+    display: flex;
+    align-items: center;
+}
+.fa-trash{
+    cursor: pointer;
+}
+#order-image{
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    margin: 0px 30px;
 }
