@@ -1,0 +1,372 @@
+/* CSS BOILERPLATE */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+/* Images Styles */
+#logo{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: 10px 10px 10px 20px;
+    mix-blend-mode: color-burn;
+}
+.top img{
+    transform: scale(1.5)
+}
+.menu-pic{
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    transform: translate(60px, -60px);
+}
+.special-image{
+    height: 200px;
+    width: 200px;
+}
+#process-pic{
+    height: 400px;
+    width: 400px;
+    border-radius: 30px;
+}
+
+/* Button Styles */
+
+.bt1{
+    height: 50px;
+    width: 125px;
+    border-radius: 30px;
+    color: #d10d46;
+    cursor: pointer;
+    margin: 0px 20px
+}
+.bt2{
+    height: 50px;
+    width: 125px;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(201, 21, 70);
+    cursor: pointer;
+}
+.bt3{
+    border: none;
+    background-color: rgb(245, 178, 195);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* Header Styles */
+header{
+    width: 100vw;
+    height: 220px;
+    background-image: url("./assets/trh.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+.nav a{
+    color: white;
+    margin: 20px;
+    font-size: 1.2rem;
+}
+.nav a:hover{
+    color: #d10d46;
+}
+
+#our-menu{
+    text-align: center;
+    color: #d10d46;
+    font-size: 40px;
+    font-weight: 600px;
+}
+.main-head{
+    transform: translate(0px -100px);
+}
+
+/* Main Styles */
+
+main{
+    margin-top: 100px;
+}
+#m1{
+    color: rgb(201, 21, 70);
+    text-align: center;
+    font-weight: lighter;
+}
+#m2{
+    color: #c91546;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.5em;
+    margin: 20px;
+}
+.menu{
+    margin: 50px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    height: auto;
+    width: 350px;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+#ice-box{
+    background-color: #f5b2c3;
+    border: 1px solid #f5b2c3;
+    box-shadow: 5px 5px #f5b2c3;
+}
+#yog-box{
+    background-color: #b9da91;
+    border: 1px solid #b9da91;
+    box-shadow: 5px 5px #b9da91;
+}
+#milk-box{
+    background-color: #e9c99e;
+    border: 1px solid #e9c99e;
+    box-shadow: 5px 5px #e9c99e;
+}
+.box-att{
+    text-align: center;
+    margin: 10px 0px;
+}
+.menu-btn{
+    margin: 20px 110px;
+}
+.main-menu{
+    display: flex;
+    justify-content: space-around;
+}
+.ice-cream{
+    margin-bottom: 40px;
+}
+.ice-cream h4{
+    color: #c91546;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.left, .right{
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    margin-top: -50px
+}
+.special{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px 0px 50px 0px;
+}
+.s{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.s h4{
+    color: #c91546;
+}
+
+.menu2{
+    height: auto;
+    width: 100vw;
+    background-color: #f2edea;
+}
+
+.a1{
+    height: 400px;
+    width: 400px;
+    background-image: url(./assets/Mixed\ Berry\ Ice\ Cream.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-top: 50px;
+    border-radius: 30px;
+}
+.pic h4{
+    color: #777474;
+    margin-left: 15px;
+}
+.pic h3{
+    color: #c91546;
+    margin: 7px 0px 20px 15px;
+    font-size: 1.8em;
+
+}
+.b2{
+    height: 400px;
+    width: 400px;
+    background-image: url(./assets/creamy-mix.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 50px 0px;
+    border-radius: 30px;
+
+}
+.a2{
+    margin-top: 100px;
+}
+.a2 h3{
+    color: #c91546;
+    margin-top: 30px;
+}
+.menu2A{
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu2B{
+    display: flex;
+    justify-content: space-evenly;
+}
+.b1{
+    margin-top: 100px;
+}
+.b1 h3{
+    color: #c91546;
+    margin-top: 30px;
+}
+.process{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.methods{
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0px 50px -50px ;
+}
+.p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p>i{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.p h4{
+    color: #c91546;
+    margin: 10px 0px;
+    font-size: 1.3em;
+}
+.p p{
+    text-align: center;
+}
+.c1 h1{
+    font-weight: 700;
+    color: #c91546;
+    margin: 15px 0px
+}
+
+.banner{
+    height: 300px;
+    width: 80%;
+    border-radius: 30px;
+    margin: 100px auto;
+    background-image: url(./assets/banner.jpeg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner h2{
+    text-align: center;
+    color: maroon;
+    font-weight: bold;
+    margin: 30px 0px;
+}
+
+/* footer Styles */
+footer{
+    width: 100vw;
+    height: auto;
+    background-color: rgb(215, 134, 152);
+}
+.f1{
+    color: white;
+}
+.f1, .f3{
+    display: flex;
+    justify-content: space-around;
+}
+.f1 h3, .f1 h5{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.f1 button{
+    margin: auto 0px;
+}
+.f2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.nav2{
+    display: flex;
+    flex-direction: column;
+}
+.nav2 h3{
+    color: white;
+    margin-bottom: 50px;
+}
+.nav2 span{
+    color: white;
+    opacity: 0.9;
+}
+.nav2 i{
+    margin-right: 10px;
+    color: maroon;
+    opacity: 1;
+}
+.social-icons{
+    display: flex;
+}
+.social-icons i{
+    color: white;
+    margin: 10px;
+}
+.social-icons i:hover{
+    font-size: 1.2rem;
+    color: #c91546;
+    cursor: pointer;
+}
+.nav2 a{
+    margin: 20px;
+    margin-top: 0px;
+    color: white;
+}
+.nav2 a:hover{
+    text-decoration: underline;
+}
+.nav2 p{
+    color: white;
+    margin-bottom: 20px;
+}
+.bt3 i{
+    margin-left: 5px;
+    color: white;
+}
+.f3{
+    color: white;
+    margin-top: 20px;
+}
+.f3 a{
+    color: white;
+}
