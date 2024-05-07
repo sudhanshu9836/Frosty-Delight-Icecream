@@ -6,7 +6,10 @@
     <div class="menu-inner">
         <img src="<%=i.photo%>" id="menu-photo">
         <h3><%=i.name%></h3>
-        <button id="bt2">Add to bag</button>
+        <form action="http://localhost:8080/bag" method="post">
+            <input type="hidden" name="uuid" value="<%= i.id %>">
+            <button id="bt2">Add to bag</button>
+        </form>
     </div>
         <%})%>
     </div>
@@ -16,7 +19,10 @@
         <div class="menu-inner">
             <img src="<%=i.photo%>" id="menu-photo">
             <h3><%=i.name%></h3>
-            <button id="bt2">Add to bag</button>
+            <form action="http://localhost:8080/bag" method="post">
+                <input type="hidden" name="uuid" value="<%= i.id %>">
+                <button id="bt2">Add to bag</button>
+            </form>
         </div>
             <%})%>
 </div>
@@ -26,7 +32,10 @@
         <div class="menu-inner">
             <img src="<%=i.photo%>" id="menu-photo">
             <h3><%=i.name%></h3>
-            <button id="bt2">Add to bag</button>
+            <form action="http://localhost:8080/bag" method="post">
+                <input type="hidden" name="uuid" value="<%= i.id %>">
+                <button id="bt2">Add to bag</button>
+            </form>
         </div>
             <%})%>
 </div>

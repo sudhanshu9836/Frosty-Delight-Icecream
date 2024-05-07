@@ -8,6 +8,8 @@ app.set( "views", path.join(__dirname, "/views"));
 app.use(express.static(path.join(__dirname, "/public")));
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
+const methodOverride = require('method-override');
+app.use(methodOverride('_method'));
 
 let icecream = [
     {
@@ -109,7 +111,6 @@ let milkshake = [
 ]
 
 let orders = [{
-    // id : "",
     name: "Bluberry",
     photo: "https://i.pinimg.com/564x/fd/f9/ac/fdf9acbc91c52008b260205713c78a59.jpg"
 }];
@@ -123,8 +124,34 @@ app.get("/about", (req,res)=>{
 app.get("/menu", (req,res)=>{
     res.render("menu.ejs", {icecream, yogurt, milkshake});
 })
+app.post('/bag', (req, res) => {
+    const uuid = req.body.uuid; 
+    const item = icecream.find(i => i.id === uuid);
+    if ( item ) {
+        orders.push(item);
+    }
+    else{
+        const item = yogurt.find(i => i.id === uuid);
+        if(item){
+            orders.push(item)
+        }
+        else{
+            const item = milkshake.find(i => i.id === uuid);
+            if(item){
+            orders.push(item)
+        }
+        }
+    }
+    res.redirect('/bag');
+});
+
 app.get("/bag", (req,res)=>{
     res.render("bag.ejs", {orders});
+})
+app.delete("/bag/:id",(req, res)=>{
+    let id = req.params.id;
+    orders = orders.filter( (p)=> id!==p.id);
+    res.redirect("/bag")
 })
 app.get("/contact", (req,res)=>{
     res.render("contact.ejs");

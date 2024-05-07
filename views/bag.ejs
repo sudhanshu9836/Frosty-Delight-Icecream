@@ -1,15 +1,19 @@
-<%- include('header')%>
+<%- include('header') %>
 <div class="bag">
     <div class="left">
         <h1>Bag</h1>
         <div class="orders-list">
-            <div class="order">
-                <h3><%=orders[0].name%></h3>
-                <div class="order-inner">
-                    <img src="<%=orders[0].photo%>" id="order-image">
-                    <form action=""><i class="fa-solid fa-trash"></i></form>
+            <% orders.forEach((order) => { %>
+                <div class="order">
+                    <h3><%= order.name %></h3>
+                    <div class="order-inner">
+                        <img src="<%= order.photo %>" id="order-image">
+                        <form action="http://localhost:8080/bag/<%= order.id %>?_method=DELETE" method="post">
+                            <button><i class="fa-solid fa-trash"></i></button>
+                        </form>
+                    </div>
                 </div>
-            </div>
+            <% }); %>
         </div>
         <div class="contact-button">
             <button class="bt1">Place Order</button>
@@ -36,4 +40,4 @@
         </div>
     </div>
 </div>
-<%- include('footer')%>
+<%- include('footer') %>
