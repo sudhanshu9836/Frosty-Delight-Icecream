@@ -454,3 +454,22 @@ footer{
     border-radius: 5px;
     margin: 0px 30px;
 }
+/* Menu Stylings */
+.menu-head{
+    margin: 50px 0px;
+}
+
+#menu-photo{
+    height: 100px;
+    width: 100px;
+}
+.menu-main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0px 80px;
+}
+.menu-inner{
+    flex: 1 0 25%;
+    margin-bottom: 30px;
+}

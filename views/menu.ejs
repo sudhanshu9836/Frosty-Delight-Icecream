@@ -1,0 +1,35 @@
+<%- include('header') %>
+
+<h1 class="menu-head">ICECREAMS</h1>
+<div class="menu-main">
+<% icecream.map((i)=>{%>
+    <div class="menu-inner">
+        <img src="<%=i.photo%>" id="menu-photo">
+        <h3><%=i.name%></h3>
+        <button id="bt2">Add to bag</button>
+    </div>
+        <%})%>
+    </div>
+<h1 class="menu-head">YOGURT</h1>
+<div class="menu-main">
+    <% yogurt.map((i)=>{%>
+        <div class="menu-inner">
+            <img src="<%=i.photo%>" id="menu-photo">
+            <h3><%=i.name%></h3>
+            <button id="bt2">Add to bag</button>
+        </div>
+            <%})%>
+</div>
+<h1 class="menu-head">MILKSHAKES</h1>
+<div class="menu-main">
+    <% milkshake.map((i)=>{%>
+        <div class="menu-inner">
+            <img src="<%=i.photo%>" id="menu-photo">
+            <h3><%=i.name%></h3>
+            <button id="bt2">Add to bag</button>
+        </div>
+            <%})%>
+</div>
+
+
+<%- include('footer') %>
