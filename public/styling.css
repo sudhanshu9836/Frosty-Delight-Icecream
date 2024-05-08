@@ -40,8 +40,8 @@ a{
     border-radius: 30px;
 }
 #contact-photo{
-    height: 600px;
-    width: 400px;
+    height: auto;
+    width: 30vmax;
 }
 
 /* Button Styles */
@@ -67,7 +67,13 @@ a{
     background-color: rgb(245, 178, 195);
     color: white;
     font-size: 20px;
+    padding: 15px;
     cursor: pointer;
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+    border-radius: 10px;
+}
+.bt3:hover{
+    background-color: #c91546;
 }
 .bt4{
     background-color: #c91546;
@@ -87,6 +93,7 @@ a{
     height: 40px;
     width: 100px;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 .bt5:hover{
     background-color: white;
@@ -94,24 +101,37 @@ a{
 }
 /* Header Styles */
 header{
-    width: 100vw;
-    height: 220px;
-    background-image: url("./assets/trh.jpg");
+    width: 100vmax;
+    height: 17vmax;
+    background-image: url("./assets/try.png");
     background-repeat: no-repeat;
     background-size: cover;
+    filter: blur(0.8);
 }
 .top{
     display: flex;
     justify-content: space-between;
     height: 100px;
 }
+.nav{
+    margin-top: 30px;
+}
 .nav a{
     color: white;
-    margin: 20px;
+    margin: 30px;
     font-size: 1.2rem;
+    border: 1px solid lightgray; 
+    padding: 10px;
+    border-radius: 30px;
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
 }
 .nav a:hover{
     color: #d10d46;
+    text-decoration: underline;
+}
+#social{
+    margin-right: 40px;
+    margin-top: 20px;
 }
 
 #our-menu{
@@ -122,6 +142,15 @@ header{
 }
 .main-head{
     transform: translate(0px -100px);
+}
+.bar{
+    position: fixed;
+    right: 0.5vmax;
+    top: 2vmax;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    display: none;
 }
 
 /* Main Styles */
@@ -371,7 +400,7 @@ footer{
     margin: 10px;
 }
 .social-icons i:hover{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #c91546;
     cursor: pointer;
 }
@@ -402,26 +431,27 @@ footer{
 /* Contact page */
 
 .contact-page{
-    margin: 120px;
+    margin: 10vmax 5vmax;
     display: flex;
     justify-content: space-between;
     border: 2px solid lightgray;
     border-radius: 10px;
+    padding-left: 2vmax;
 }
 .contact-info{
-    padding: 20px;
+    padding: 20px 20px 0px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-left: 50px;
+    margin-left: 0vmax;
 }
 .c{
     display: flex;
     flex-direction: column;
 }
 .c input{
-    height: 50px;
-    width: 600px;
+    height: 4vmax;
+    width: 38vmax;
     margin-top: 20px;
     font-size: 18px;
     border-radius: 12px;
@@ -430,8 +460,8 @@ footer{
     margin-bottom: 20px;
 }
 #contactAddress{
-    height: 100px;
-    width: 600px;
+    height: 10vmax;
+    width: 38vmax;
     margin-top: 20px;
     font-size: 18px;
     border-radius: 12px;
@@ -449,7 +479,7 @@ footer{
 /* Order Styling */
 
 .bag{
-    margin: 120px;
+    margin: 5vmax;
     display: flex;
     justify-content: space-between;
     border: 2px solid lightgray;
@@ -468,9 +498,8 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 400px;
+    width: 40vmax;
     border: 2px solid lightgray;
-    /* margin-left: 30px; */
     margin: 30px;
     border-radius: 10px;
 }
@@ -511,7 +540,6 @@ footer{
 
 .menu-inner{
     flex: 1 0 10%;
-    /* margin-bottom: 60px; */
     display: flex;
     border: 1px solid lightgray;
     border-radius: 10px;

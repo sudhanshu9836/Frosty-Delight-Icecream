@@ -5,6 +5,16 @@
     .c1{
         margin-left: 50px;
     }
+    #social{
+        display: none;
+    }
+    .nav{
+        margin-right: 300px;
+    }
+    .nav a{
+        margin-right: 10px;
+    }
+
 }
 
 @media screen and (max-width:900px) {
@@ -28,6 +38,17 @@
     }
     .top img{
         transform: scale(1);
+    }
+    .bag{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-page{
+        margin: 10vmax 1vmax;
+    }
+    .nav{
+        margin-right: 400px;
     }
     
 }
@@ -64,7 +85,28 @@
     .top img{
         transform: scale(1.2);
     }
-    
+    #social, #nav{
+        display: none;
+    }
+    #nav{
+        height: 25vmax;
+        width: 30vmax;
+        border: 2px solid lightgrey;
+        border-radius: 10px;
+        background-color: #dca8c4;
+        margin-top: 80px;
+        transform: translateX(-2vmax);
+    }
+    #nav a{
+        text-align: center;
+        background-color: white;
+        color: black;
+    }
+    .bar{
+        display: block;
+        transform: translateX(-50px);
+        font-size: 2em;
+    }
 }
 
 @media screen and (max-width:720px){
@@ -83,6 +125,14 @@
     #method2{
         flex-wrap: wrap;
         margin-top: 30px;
+    }
+    #contact-photo{
+        display: none;
+    }
+    .contact-page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -131,6 +181,46 @@
         flex-wrap: wrap;
         margin-top: 90px;
     }
+    .f2{
+        margin-left: 20px;
+    }
+    .menu-inner{
+        transform: scale(0.9);
+        padding: 10px;
+    }
+    .bt4{
+        transform: scale(0.8);
+    }
+    .menu-main{
+        margin: 0px 50px;
+    }
+    .left{
+        margin-left: -5vmax;
+    }
+    .right{
+        margin-left: 5px;
+    }
+    #social, #nav{
+        display: none;
+    }
+    #nav{
+        height: 25vmax;
+        width: 30vmax;
+        border: 2px solid lightgrey;
+        border-radius: 10px;
+        background-color: #dca8c4;
+        margin-top: 80px;
+        transform: translateX(-2vmax);
+    }
+    #nav a{
+        text-align: center;
+        background-color: white;
+        color: black;
+    }
+    .bar{
+        display: block;
+    }
+    
 }
 
 @media screen and (max-width:480px){
@@ -139,6 +229,28 @@
     }
     .a1, .b2{
         transform: scale(0.8);
+    }
+    .bt3{
+        display: none;
+    }
+    .menu-main{
+        margin: 0px 10px;
+    }
+    .order{
+        transform: scale(0.8);
+    }
+    .bag{
+        margin: 0vmax;
+    }
+    .left{
+        margin-left: -100px;
+    }
+    .contact-page input{
+        width: 30vmax;
+    }
+    #contact-page-info{
+        margin-left: 4vmax;
+
     }
 }
 @media screen and (max-width:379px) {
@@ -183,7 +295,15 @@
         position: relative;
         right: 20px;
     }
-    
+    .f1 button, .f1 h5{
+        display: none;
+    }
+    .right{
+        margin-left: 2vmax;
+    }
+    .c input, #contactAddress{
+        width: 32vmax;
+    }
 }
 
 @media screen and (max-width:300px) {
@@ -203,5 +323,8 @@
     #social{
         display: flex;
         flex-direction: column;
+    }
+    .menu-main{
+        margin: 0px 0px;
     }
 }
