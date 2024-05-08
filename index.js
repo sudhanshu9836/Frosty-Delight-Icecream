@@ -110,10 +110,7 @@ let milkshake = [
     }
 ]
 
-let orders = [{
-    name: "Bluberry",
-    photo: "https://i.pinimg.com/564x/fd/f9/ac/fdf9acbc91c52008b260205713c78a59.jpg"
-}];
+let orders = [];
 
 app.get("/", (req, res)=>{
     res.render("home.ejs");
@@ -152,6 +149,12 @@ app.delete("/bag/:id",(req, res)=>{
     let id = req.params.id;
     orders = orders.filter( (p)=> id!==p.id);
     res.redirect("/bag")
+})
+app.post("/ordered", (req,res)=>{
+    const username = req.body.name;
+    const userNo = req.body.contactNumber;
+    const userAd = req.body.contactAddress;
+    res.render("ordered.ejs", {username,userNo, userAd})
 })
 app.get("/contact", (req,res)=>{
     res.render("contact.ejs");

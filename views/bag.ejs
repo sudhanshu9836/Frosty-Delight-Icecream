@@ -4,6 +4,7 @@
         <h1>Bag</h1>
         <div class="orders-list">
             <% orders.forEach((order) => { %>
+                <% if(orders.length>0){ %>
                 <div class="order">
                     <h3><%= order.name %></h3>
                     <div class="order-inner">
@@ -13,30 +14,34 @@
                         </form>
                     </div>
                 </div>
+                <%}%>
+
             <% }); %>
-        </div>
-        <div class="contact-button">
-            <button class="bt1">Place Order</button>
         </div>
     </div>
     <div class="right">
         <div class="contact-info">
-            <div class="c">
-                <label for="name">Name :</label>
-                <input type="text" placeholder="Enter your name .." id="name" required>
-            </div>
-            <div class="c">
-                <label for="email">Email :</label>
-                <input type="email" placeholder="Enter your email .." id="email" required>
-            </div>
-            <div class="c">
-                <label for="contact-no">Phone no :</label>
-                <input type="number" placeholder="Enter your phone number .." required>
-            </div>
-            <div class="c">
-                <label for="contact-address">Address :</label>
-                <textarea placeholder="Enter your address .." id="contact-address" required></textarea>
-            </div>
+            <form action="http://localhost:8080/ordered" id="order-form" method="post">
+                <div class="c">
+                    <label for="name">Name :</label>
+                    <input type="text" placeholder="Enter your name .." id="name" name="name" required>
+                </div>
+                <div class="c">
+                    <label for="email">Email :</label>
+                    <input type="email" placeholder="Enter your email .." id="email" name="email" required>
+                </div>
+                <div class="c">
+                    <label for="contactNumber">Phone no :</label>
+                    <input type="number" placeholder="Enter your phone number .." name="contactNumber" id="contactNumber" required>
+                </div>
+                <div class="c">
+                    <label for="contactAddress">Address :</label>
+                    <textarea placeholder="Enter your address .." id="contactAddress" name="contactAddress" required></textarea>
+                </div>
+                <div class="contact-button">
+                    <button class="bt1">Place Order</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>

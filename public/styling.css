@@ -405,7 +405,7 @@ footer{
     padding: 10px;
     margin-bottom: 20px;
 }
-#contact-address{
+#contactAddress{
     height: 100px;
     width: 600px;
     margin-top: 20px;
@@ -472,4 +472,20 @@ footer{
 .menu-inner{
     flex: 1 0 25%;
     margin-bottom: 30px;
+}
+
+/* Ordered styling */
+
+.ordered{
+    margin: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ordered h5{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.ordered i{
+    margin-left: 10px;
 }
