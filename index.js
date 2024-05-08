@@ -29,11 +29,6 @@ let icecream = [
     },
     {
         id: uuidv4(),
-        name: "Mint Chocolate Chip",
-        photo: "https://i.pinimg.com/564x/a3/32/83/a33283e4e2a3705813f3575666b2229d.jpg"
-    },
-    {
-        id: uuidv4(),
         name: "Salted Caramel",
         photo: "https://i.pinimg.com/564x/7e/ba/bf/7ebabfb96c9b8970c5bfce360dc80e2d.jpg"
     },
@@ -46,6 +41,11 @@ let icecream = [
         id: uuidv4(),
         name: "Butter Pecan",
         photo: "https://i.pinimg.com/564x/fc/4e/4d/fc4e4d75bdc73e852d895506621c356a.jpg"
+    },
+    {
+        id: uuidv4(),
+        name: "Mint Chocolate Chip",
+        photo: "https://i.pinimg.com/564x/a3/32/83/a33283e4e2a3705813f3575666b2229d.jpg"
     },
     {
         id: uuidv4(),

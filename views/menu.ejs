@@ -1,41 +1,47 @@
 <%- include('header') %>
 
-<h1 class="menu-head">ICECREAMS</h1>
+<h1 class="menu-head" id="ice-head">ICECREAMS</h1>
 <div class="menu-main">
 <% icecream.map((i)=>{%>
     <div class="menu-inner">
         <img src="<%=i.photo%>" id="menu-photo">
-        <h3><%=i.name%></h3>
-        <form action="http://localhost:8080/bag" method="post">
-            <input type="hidden" name="uuid" value="<%= i.id %>">
-            <button id="bt2">Add to bag</button>
-        </form>
+        <div class="addToCart">
+            <h3><%=i.name%></h3>
+            <form action="http://localhost:8080/bag" method="post">
+                <input type="hidden" name="uuid" value="<%= i.id %>">
+                <button class="bt4">Add to cart</button>
+            </form>
+        </div>
     </div>
         <%})%>
     </div>
-<h1 class="menu-head">YOGURT</h1>
+<h1 class="menu-head" id="yog-head">YOGURT</h1>
 <div class="menu-main">
     <% yogurt.map((i)=>{%>
         <div class="menu-inner">
             <img src="<%=i.photo%>" id="menu-photo">
-            <h3><%=i.name%></h3>
-            <form action="http://localhost:8080/bag" method="post">
-                <input type="hidden" name="uuid" value="<%= i.id %>">
-                <button id="bt2">Add to bag</button>
-            </form>
+            <div class="addToCart">
+                <h3><%=i.name%></h3>
+                <form action="http://localhost:8080/bag" method="post">
+                    <input type="hidden" name="uuid" value="<%= i.id %>">
+                    <button class="bt4">Add to cart</button>
+                </form>
+            </div>
         </div>
             <%})%>
 </div>
-<h1 class="menu-head">MILKSHAKES</h1>
+<h1 class="menu-head" id="milk-head">MILKSHAKES</h1>
 <div class="menu-main">
     <% milkshake.map((i)=>{%>
         <div class="menu-inner">
             <img src="<%=i.photo%>" id="menu-photo">
-            <h3><%=i.name%></h3>
-            <form action="http://localhost:8080/bag" method="post">
-                <input type="hidden" name="uuid" value="<%= i.id %>">
-                <button id="bt2">Add to bag</button>
-            </form>
+            <div class="addToCart">
+                <h3><%=i.name%></h3>
+                <form action="http://localhost:8080/bag" method="post">
+                    <input type="hidden" name="uuid" value="<%= i.id %>">
+                    <button class="bt4">Add to cart</button>
+                </form>
+            </div>
         </div>
             <%})%>
 </div>

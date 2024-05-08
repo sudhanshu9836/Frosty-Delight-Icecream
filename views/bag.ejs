@@ -1,7 +1,7 @@
 <%- include('header') %>
 <div class="bag">
     <div class="left">
-        <h1>Bag</h1>
+        <h1>Cart</h1>
         <div class="orders-list">
             <% orders.forEach((order) => { %>
                 <% if(orders.length>0){ %>
@@ -10,7 +10,7 @@
                     <div class="order-inner">
                         <img src="<%= order.photo %>" id="order-image">
                         <form action="http://localhost:8080/bag/<%= order.id %>?_method=DELETE" method="post">
-                            <button><i class="fa-solid fa-trash"></i></button>
+                            <button id="trash"><i class="fa-solid fa-trash"></i></button>
                         </form>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
                     <textarea placeholder="Enter your address .." id="contactAddress" name="contactAddress" required></textarea>
                 </div>
                 <div class="contact-button">
-                    <button class="bt1">Place Order</button>
+                    <button class="bt5">Place Order</button>
                 </div>
             </form>
         </div>
