@@ -9,12 +9,17 @@
         display: none;
     }
     .nav{
-        margin-right: 300px;
+        margin-right: 25px;
     }
     .nav a{
         margin-right: 10px;
     }
-
+    
+}
+@media screen and (max-width: 1204px){
+    .ordered{
+        transform: translate(10px);
+    }
 }
 
 @media screen and (max-width:900px) {
@@ -47,9 +52,11 @@
     .contact-page{
         margin: 10vmax 1vmax;
     }
-    .nav{
-        margin-right: 400px;
+    .ordered{
+    margin: 60px;
+    transform: translate(0);
     }
+    
     
 }
 
@@ -76,9 +83,6 @@
     .social-icons i{
         margin: 5px;
     }
-    .nav{
-        transform: translate(100px);
-    }
     #process-pic{
         transform: scale(0.8);
     }
@@ -89,18 +93,21 @@
         display: none;
     }
     #nav{
-        height: 25vmax;
-        width: 30vmax;
+        height: 350px;
+        width: 40vmax;
         border: 2px solid lightgrey;
         border-radius: 10px;
         background-color: #dca8c4;
         margin-top: 80px;
-        transform: translateX(-2vmax);
+        transform: translateY(-10px);
+        position: relative;
+        z-index: 99;
     }
     #nav a{
         text-align: center;
         background-color: white;
         color: black;
+        margin-top: 2.5vmax;
     }
     .bar{
         display: block;
@@ -133,6 +140,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .order{
+        transform: translateX(-6vmax);
     }
 }
 
@@ -200,32 +210,15 @@
     .right{
         margin-left: 5px;
     }
-    #social, #nav{
-        display: none;
+    .ordered{
+        margin-left: 20px;
+        width: 400px;
     }
-    #nav{
-        height: 25vmax;
-        width: 30vmax;
-        border: 2px solid lightgrey;
-        border-radius: 10px;
-        background-color: #dca8c4;
-        margin-top: 80px;
-        transform: translateX(-2vmax);
-    }
-    #nav a{
-        text-align: center;
-        background-color: white;
-        color: black;
-    }
-    .bar{
-        display: block;
-    }
-    
 }
 
 @media screen and (max-width:480px){
     .nav{
-        margin-left: -120px;
+        margin-left: 30px;
     }
     .a1, .b2{
         transform: scale(0.8);
@@ -242,9 +235,6 @@
     .bag{
         margin: 0vmax;
     }
-    .left{
-        margin-left: -100px;
-    }
     .contact-page input{
         width: 30vmax;
     }
@@ -252,6 +242,10 @@
         margin-left: 4vmax;
 
     }
+    .order{
+        transform: translateX(-5vmax);
+    }
+
 }
 @media screen and (max-width:379px) {
     .f2{
@@ -304,6 +298,13 @@
     .c input, #contactAddress{
         width: 32vmax;
     }
+    #logo{
+        display: none;
+    }
+    .ordered{
+        margin-left: 10px;
+        width: 300px;
+    }
 }
 
 @media screen and (max-width:300px) {
@@ -321,9 +322,8 @@
         margin-top: 20px;
     }
     #social{
-        display: flex;
-        flex-direction: column;
-    }
+        display: none;
+        }
     .menu-main{
         margin: 0px 0px;
     }

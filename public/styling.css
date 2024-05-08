@@ -101,7 +101,7 @@ a{
 }
 /* Header Styles */
 header{
-    width: 100vmax;
+    width: 100%;
     height: 17vmax;
     background-image: url("./assets/try.png");
     background-repeat: no-repeat;
@@ -568,6 +568,7 @@ footer{
     width: 500px;
     padding: 50px;
     transform: translateX(350px);
+    border-radius: 10px;
 }
 .ordered h5{
     margin-top: 40px;
