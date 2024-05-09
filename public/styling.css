@@ -54,6 +54,10 @@ a{
     cursor: pointer;
     margin: 0px 20px
 }
+.bt1:hover{
+    background-color: #c91546;
+    color: white;
+}
 .bt2{
     height: 50px;
     width: 125px;
@@ -84,6 +88,11 @@ a{
     padding: 10px;
     border-radius: 10px;
     margin-left: 10px;
+}
+.bt4:hover{
+    background-color: white;
+    color: black;
+
 }
 .bt5{
     background-color: #d10d46;
@@ -215,7 +224,7 @@ main{
     margin-bottom: 10px;
     font-size: 20px;
 }
-.left, .right{
+.ice-left, .ice-right{
     display: flex;
     flex-direction: column;
 }
@@ -559,7 +568,7 @@ footer{
 /* Ordered styling */
 
 .ordered{
-    margin: 180px;
+    margin: 100px 180px;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -7,7 +7,7 @@
         <img src="<%=i.photo%>" id="menu-photo">
         <div class="addToCart">
             <h3><%=i.name%></h3>
-            <form action="https://e-cell-final-project.onrender.com/bag" method="post">
+            <form action="http://localhost:8080/bag" method="post">
                 <input type="hidden" name="uuid" value="<%= i.id %>">
                 <button class="bt4">Add to cart</button>
             </form>
@@ -22,7 +22,7 @@
             <img src="<%=i.photo%>" id="menu-photo">
             <div class="addToCart">
                 <h3><%=i.name%></h3>
-                <form action="https://e-cell-final-project.onrender.com/bag" method="post">
+                <form action="http://localhost:8080/bag" method="post">
                     <input type="hidden" name="uuid" value="<%= i.id %>">
                     <button class="bt4">Add to cart</button>
                 </form>
