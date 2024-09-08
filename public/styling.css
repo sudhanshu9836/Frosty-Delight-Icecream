@@ -503,6 +503,7 @@ footer{
 .left{
     width: 60%;
 }
+
 .order{
     display: flex;
     justify-content: space-around;
@@ -511,6 +512,11 @@ footer{
     border: 2px solid lightgray;
     margin: 30px;
     border-radius: 10px;
+}
+#add-more{
+    background-color: #c91546;
+    color: white;
+    cursor: pointer;
 }
 .order-inner{
     display: flex;
