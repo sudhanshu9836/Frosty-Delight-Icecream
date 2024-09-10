@@ -9,7 +9,7 @@
                     <h3><%= order.name %></h3>
                     <div class="order-inner">
                         <img src="<%= order.photo %>" id="order-image">
-                        <form action="http://localhost:8080/bag/<%= order.id %>?_method=DELETE" method="post">
+                        <form action="https://frosty-delight-icecream-1.onrender.com/bag/<%= order.id %>?_method=DELETE" method="post">
                             <button id="trash"><i class="fa-solid fa-trash"></i></button>
                         </form>
                     </div>
@@ -18,13 +18,13 @@
 
             <% }); %>
         </div>
-        <form action="http://localhost:8080/menu" id="add-form">
+        <form action="https://frosty-delight-icecream-1.onrender.com/menu" id="add-form">
             <button class="order" id="add-more">+</button>
         </form>
     </div>
     <div class="right">
         <div class="contact-info">
-            <form action="http://localhost:8080/ordered" id="order-form" method="post">
+            <form action="https://frosty-delight-icecream-1.onrender.com/ordered" id="order-form" method="post">
                 <div class="c">
                     <label for="name">Name :</label>
                     <input type="text" placeholder="Enter your name .." id="name" name="name" required>
